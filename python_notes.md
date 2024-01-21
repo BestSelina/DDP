@@ -30,7 +30,7 @@ x, y = y, x # 交换x和y的值
 操作符：连接，重复，取字符，切割。
 ```python
 # 连接，直接用+
-name = Rose
+name = "Rose"
 x = "Hello" + "," + name + "!" # Hello,Rose!
 
 # 重复，用*
@@ -50,4 +50,25 @@ Python中的六个数据类型。不可变的：数字，字符串，元组；�
 
 可变数据类型：当变量的值改变，对应的内存地址不会改变。
 
+string函数：
+
+```python
+# upper()全部转大写，lower()全部转小写。
+name = "Rose"
+upper_name = name.upper() # ROSE
+lower_name = name.lower() # rose
+
+# strip()去除字符串头尾的空格，\t，\n，\r（只能头尾），也可以去除指定字符，eg.str.strip("0")。
+whitespace_name = "  Rose  \t \n \r"
+stripped_name = whitespace_name.strip() # Rose
+
+# find()找到子字符串，replace()替换字符串的一部分
+name.find("os") # 1
+new_name = name.replace("os", "osi") # Rosie
+
+# split()切割字符串，join()拼接字符串
+name_string = "Rose, Jennie, Jisoo, Lisa"
+name_list = name_string.split(", ") # ['Rose', 'Jennie', 'Jisoo', 'Lisa']
+name_new_string = " ".join(name_list) # Rose Jennie Jisoo Lisa
+```
 
