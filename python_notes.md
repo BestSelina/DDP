@@ -66,7 +66,7 @@ stripped_name = whitespace_name.strip() # Rose
 name.find("os") # 1
 new_name = name.replace("os", "osi") # Rosie
 
-# split()切割字符串，join()拼接字符串
+# split()切割字符串成list，join()拼接字符串，""内是什么就以什么连接，没有就直接拼在一起；是空格，" "，就以空格连接；是","，就以,连接。
 name_string = "Rose, Jennie, Jisoo, Lisa"
 name_list = name_string.split(", ") # ['Rose', 'Jennie', 'Jisoo', 'Lisa']
 name_new_string = " ".join(name_list) # Rose Jennie Jisoo Lisa
