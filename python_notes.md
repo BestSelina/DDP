@@ -72,3 +72,12 @@ name_list = name_string.split(", ") # ['Rose', 'Jennie', 'Jisoo', 'Lisa']
 name_new_string = " ".join(name_list) # Rose Jennie Jisoo Lisa
 ```
 
+在字符串中插入变量：
+1. 旧方法：字符串中`%`代替变量的位置，然后最后要加上`% (,)`
+2. `str.format()`方法：用`{}`代替变量的位置，然后最后加上`.format(,)`
+3. F-strings方法：`f" {}"`
+
+常见处理语法错误：结尾不加"
+
+
+
