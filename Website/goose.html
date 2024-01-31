@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Goose</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Custom Internal Styling -->
+    <style>
+        body {
+            background-color: rgb(227, 230, 230);
+            color: white;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            /* Larger text for logo */
+        }
+
+        .carousel-item {
+            width: 35em;
+            height: 25em
+        }
+
+        .order-button {
+            background-color: white;
+            color: black;
+            border: none;
+        }
+
+        .solid-navbar {
+            background-color: #212529;
+            /* Matches Bootstrap Card */
+        }
+
+        .custom-jumbotron {
+            background: url('images/ramen-banner.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .order-button {
+            background-color: white;
+            color: black;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top solid-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pretty Goose</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Basket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Account</a>
+                    </li>
+                </ul>
+                <button class="btn order-button">Order</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel slide-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/british-food-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/british-food-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/british-food-3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Main Heading -->
+    <div class="text-center mt-4">
+        <h1 style="color: rgb(254,189,105);">The Best British food in Warwick!</h1>
+    </div>
+
+    <!-- Menu Heading -->
+    <div class="text-center mt-4">
+        <h2>Menu</h2>
+    </div>
+
+    <!-- Menu Cards -->
+    <div class="container mt-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Menu Card -->
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="images/instant-ramen.jpg" class="card-img-top" alt="Menu Item">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Flavour Ramen</h5>
+                        <p class="card-text">£29.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="images/instant-ramen.jpg" class="card-img-top" alt="Menu Item">
+                    <div class="card-body">
+                        <h5 class="card-title">Beef Flavour Ramen</h5>
+                        <p class="card-text">£29.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="images/instant-ramen.jpg" class="card-img-top" alt="Menu Item">
+                    <div class="card-body">
+                        <h5 class="card-title">Duck Flavour Ramen</h5>
+                        <p class="card-text">£29.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="images/instant-ramen.jpg" class="card-img-top" alt="Menu Item">
+                    <div class="card-body">
+                        <h5 class="card-title">Pork Flavour Ramen</h5>
+                        <p class="card-text">£29.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="images/instant-ramen.jpg" class="card-img-top" alt="Menu Item">
+                    <div class="card-body">
+                        <h5 class="card-title">Prawn Flavour Ramen</h5>
+                        <p class="card-text">£29.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="images/cup-ramen.jpg" class="card-img-top" alt="Menu Item">
+                    <div class="card-body">
+                        <h5 class="card-title">Limited Edition Jordan's Special Ramen</h5>
+                        <p class="card-text">£99.99</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="mt-4 p-5  text-white text-center rounded" style="background-color: #212529;">
+        <h1>Time For Some Ramen!</h1>
+        <button class="btn order-button my-4">Order Now</button>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center mt-4 py-3">
+        © 2024 Warwick Ramen
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
