@@ -15,14 +15,18 @@
             color: black;
         }
 
+
         .navbar-brand {
             font-size: 1.5em;
             /* Larger text for logo */
         }
 
-        .carousel-item {
-            width: 90em;
-            height: 35em
+        .login {
+            margin: 1rem;
+        }
+
+        .register {
+            margin: 1rem 1rem 1rem 0;
         }
 
         .order-button {
@@ -88,22 +92,64 @@
 
     <!-- login section -->
     <div class="login">
+        <div class="register">
+            <span>If you don't have an account now... Click here!</span>
+            <div class="col-12">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Register
+                </a>
+            </div>
+        </div>
+
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="inputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
+                            placeholder="name@example.com" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword1" aria-describedby="passwordHelp"
+                            required>
+                        <div id="passwordHelp" class="form-text">Your password must be 8-20 characters long, contain
+                            capital
+                            letters, lowercase letters and numbers.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword2" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="inputPassword2" required>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
         <form>
             <div class="mb-3">
                 <label for="inputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
-                    placeholder="name@example.com">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    placeholder="name@example.com" required>
             </div>
             <div class="mb-3">
                 <label for="inputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword1" aria-describedby="passwordHelp">
-                <div id="passwordHelp" class="form-text">Your password must be 8-20 characters long, contain capital
-                    letters, lowercase letters and numbers.</div>
+                <input type="password" class="form-control" id="inputPassword1" aria-describedby="passwordHelp"
+                    required>
             </div>
-            <div class="mb-3">
-                <label for="inputPassword2" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="inputPassword2">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
@@ -124,8 +170,9 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+
+        </script>
 
 
 </body>
