@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(239, 217, 202);
+}
+
+.container,
+.container-fluid {
+    background-color: red;
+    border: yellow solid 15px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.row {
+    background-color: green;
+    border: pink solid 10px;
+}
+
+[class*="col"] {
+    background-color: blue;
+    border: black solid 5px;
+    color: rgb(255, 255, 255);
+}
+
